@@ -64,18 +64,35 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-2 publication-title">TexGen: Text-Guided 3D Texture Generation with Multi-view Sampling and Resampling</h1>
-                        <div class="is-size-5 publication-authors">
-                            <span class="author-block">
-                                <a >Anonymous Authors</a><sup></span>
+                        <div class="is-size-3 publication-authors">
+                          <b>ECCV 2024</b>
                         </div>
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block"><b>ECCV 2024 Under Review</b></span>
+                            <span class="author-block">
+                                <a href="https://dong-huo.github.io/">Dong Huo</a><sup>1</sup>, 
+                                <a href="https://sites.google.com/site/xinxinzuohome/home">Xinxin Zuo</a><sup>2</sup>, 
+                                <a href="https://ca.linkedin.com/in/zixin-guo-bb5087208">Zixin Guo</a><sup>3</sup>, 
+                                <a href="https://scholar.google.com/citations?user=xFAV1X8AAAAJ&hl=en">Zhihao Shi</a><sup>2</sup>, 
+                                <a href="https://scholar.google.com/citations?user=Asz24wcAAAAJ&hl=zh-CN">Juwei Lu</a><sup>2</sup>, <br />
+                                <a href="https://pdaicode.github.io/index.html">Peng Dai</a><sup>2</sup>, 
+                                <a href="https://ieeexplore.ieee.org/author/37089011822">Songcen Xu</a><sup>2</sup>, 
+                                <a href="https://www.ece.ualberta.ca/~lcheng5/">Li Cheng</a><sup>1</sup>, 
+                                <a href="https://webdocs.cs.ualberta.ca/~yang/">Yee-Hong Yang</a><sup>1</sup>
+                            <sup></span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                          <span class="author-block">
+                            <b>
+                            <sup>1</sup>University of Alberta, Canada, <br />
+                            <sup>2</sup>Huawei Noah’s Ark Lab, Canada, <br />
+                            <sup>3</sup>University of Toronto, Canada
+                          </b></span>
                         </div>
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- PDF Link. -->
-                                <!-- <span class="link-block">
-                                    <a href="static/controlnet_texture.pdf"
+                                <span class="link-block">
+                                    <a href="static/paper.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
@@ -91,7 +108,7 @@
                                         </span>
                                         <span>Supplementary</span>
                                     </a>
-                                </span> -->
+                                </span>
                                 <!-- <span class="link-block">
                                     <a class="external-link button is-normal is-rounded is-dark" href="static/Decorate3D.pdf">
                                         <span class="icon">
@@ -150,12 +167,12 @@
             </div>
         </div>
     </section>
-    <!-- <section class="section">
+    <section class="section">
         <div class="container is-max-desktop">
             <div class="columns is-centered" style="margin-top: 15px">
                 <div class="column is-full-width">
                     <h2 class="title is-4">Method Overview</h2>
-                    <img src="./static/teaser/overview.png"/>
+                    <img src="./static/teaser/overview_2.png"/>
                     <div class="content has-text-justified" style="padding-top: 15px">
                       <p> Overview of our proposed method, where <b>AGVS</b> and <b>T\(\mathbf{^2}\)GR</b> denote Attention-Guided View Sampling and Text&Texture-Guided Resampling, respectively. First of all, we sample \(N\) viewpoints across the objects. As shown in (a), our texture sampling strategy is an interleaved process of texture generation and diffusion denoising. Specifically, our texture sampling process is structured into \(T\) desnoising steps of diffusion process, and a complete RGB texture map (\(\hat{U}_{t}^N\)) is generated at the end of each step. As shown in (b), at denoising step \(t\), each AGVS module receives noisy latent features \(x_{t}^i\) as input to sample an image and produce a <b>partial texture map</b> \(\hat{U}_{t}^i\), along with noise estimation \(\epsilon_\theta(x_t^i)\). The generated \(\hat{U}_{t}^i\) serves as guidance for sampling the subsequent view. Subsequently, a <b>complete texture map</b> \(\hat{U}_{t}^N\) is employed to refine the noise estimation of each view within T\(^2\)GR modules, facilitating the prediction of noisy features for the ensuing denoising step (\(x_{t-1}^{1...N}\)).</p>
                     </div>
@@ -178,7 +195,7 @@
               </div>
           </div>
       </div>
-  </section> -->
+  </section>
 
     <section class="section hero">
         <div class="container is-max-desktop">
